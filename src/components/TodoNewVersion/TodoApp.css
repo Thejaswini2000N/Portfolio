@@ -1,0 +1,258 @@
+.task-home-container {
+    min-height: 90vh;
+    min-width: 90vw;
+    max-width: 95vw;
+    background-color: #c4c4c4;
+    margin: auto;
+    margin-top: 10px;
+    /* display: flex; */
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.task-body {
+    min-height: 90vh;
+    min-width: 90vw;
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+.task-body .add-task-container {
+    position: absolute;
+    right: 4rem;
+    bottom: 3rem;
+}
+
+.task-body .add-task-container button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.task-body .add-task-container button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.task-body .task-list-container .task-headings,
+.task-body .task-list-container .task-list-details {
+    display: flex;
+    border: 1px solid;
+    border-top: none;
+    margin: auto;
+}
+
+.task-body .task-list-container .task-headings {
+    border: 1px solid;
+}
+
+.task-body .task-list-container .task-headings > div,
+.task-body .task-list-container .task-list-details > div {
+    margin-right: 20px;
+    margin-left: 20px;
+    min-height: 20px;
+    width: 50px;
+    padding: 5px;
+    /* border: 1px solid; */
+}
+
+.task-body .task-list-container .task-headings .task-description,
+.task-body .task-list-container .task-list-details .task-description  {
+    min-width: 200px;
+}
+
+
+/* For Modal */
+
+.modal-pop-up-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    background: #fff;
+    min-height: 50vh;
+    min-width: 20vw;
+    border-radius: 10px;
+}
+
+.modal-body {
+    height: 100%;
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem
+}
+
+.modal-close-button button {
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    height: 20px;
+    width: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.modal-close-button button:hover,
+.modal-pop-up-container .footer-buttons button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-pop-up-container .footer-buttons {
+    /* position: absolute;
+    right: 2rem;
+    bottom: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-pop-up-container .footer-buttons button {
+    margin: 5px;
+    padding: 5px;
+    height: 25px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Task form */
+.task-form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.task-form-container .task-heading {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.task-form-body > div {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 20px;
+}
+
+.task-form-body > div label {
+    font-size: 0.8rem;
+    height: 20px;
+    min-width: 70px;
+}
+
+.task-form-body > div select,
+.task-form-body > div input {
+    font-size: 0.8rem;
+    width: 10rem;
+}
+
+.modal-form-container .required-field {
+    font-size: 0.6rem;
+    color: red;
+}
+
+/* For todo */
+.new-todo-container {
+    position: relative;
+    background: #c4c4c4;
+    min-height: 90vh;
+    min-width: 90vw;
+    max-width: 95vw;
+    background-color: #c4c4c4;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.new-todo-container {
+    position: relative;
+}
+
+.add-todo {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+}
+
+.add-todo button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.new-todo-modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 1px solid; */
+    min-height: 300px;
+    min-width: 300px;
+    background-color: white;
+    padding: 10px;
+}
+
+.todo-modal-footer-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.todo-modal-footer-buttons button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.new-todo-modal-form form {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.new-todo-modal-form form div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.new-todo-modal-form form div label {
+    min-width: 70px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.new-todo-modal-form form div input, 
+.new-todo-modal-form form div select, 
+.new-todo-modal-form form div textarea {
+    width: 160px;
+    margin-left: 5px;
+}

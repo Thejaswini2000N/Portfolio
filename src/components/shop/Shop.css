@@ -1,0 +1,231 @@
+.shop-home {
+    min-height: 90vh;
+    /* width: 90vw; */
+    background-color: rgb(231, 231, 231);
+    margin: auto;
+}
+
+.modal-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 600px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: brown;
+    color: white;
+}
+
+.shop-home a {
+    color: white;
+}
+
+.header nav ul {
+    display: flex;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.header nav li {
+    margin: 30px;
+    padding: 10px;
+}
+
+.header nav li:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    opacity: 0.5;
+}
+
+.overlay:hover {
+    cursor: pointer;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 50%;
+    height: 600px;
+    z-index: 1;
+}
+
+.form {
+    display: flex;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.product {
+    margin: 5px;
+    padding: 15px;
+    min-height: 100px;
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr td:hover {background-color: #ddd;}
+
+table tr td:hover {
+    cursor: move;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.view-container {
+    display: flex;
+}
+
+.view-container > div {
+    width: 33.3%;
+    font-weight: bold;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    margin: 2px;
+    border-bottom: 1px solid #fff;
+}
+
+.view-container hr {
+    width: 100%;
+}
+
+
+.list-of-products {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid;
+    cursor: move;
+    background-color: #fff;
+    color: #04AA6D;
+}
+
+.recycle-container .recycle-header, .restore-container {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid; */
+    padding: 10px;
+    align-items: center;
+}
+
+.restore-container {
+    width: 20%;
+}
+
+.restore-container > p {
+    cursor: pointer;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-container .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    position: relative;
+}
+
+.carousel-container .image-container .image {
+    /* border: 1px solid; */
+    padding: 5px;
+    margin: 10px;
+    height: 60vh;
+    width: 90vw;
+}
+
+.carousel-container .image-container .image.show {
+    display: block;
+}
+
+.carousel-container .image-container .image.hide {
+    display: none;
+}
+
+
+.image-btns button {
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: black;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.image-btns .previous {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    /* transform: translateY(-50%); */
+}
+
+.image-btns .next {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    /* transform: translateY(-50%); */
+}
+
+.slide-round-button-container {
+    position: absolute;
+    left: 50%;
+}
+
+.slide-round-button {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: none;
+    margin: 2px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.slide-round-button.active {
+    background-color: #000;
+}

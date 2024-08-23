@@ -1,0 +1,36 @@
+.drag-drop-container {
+    background-color: burlywood;
+    padding: 20px;
+}
+
+.upper-container, .lower-container {
+    background-color: grey;
+    margin: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* .lower-container {
+    background-color: grey;
+    margin: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+} */
+
+.upper-container p, .lower-container p {
+    background-color: white;
+    cursor: move;
+    height: 35px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.dragging {
+    opacity: .7;
+}
+

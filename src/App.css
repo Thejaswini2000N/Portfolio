@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.app-container {
+  /* background-color: #93c8f2; */
+}
+
+.home-container {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  min-height: 80vh; 
+  margin: auto;
+  /* margin-top: 10%; */
+  z-index: 5;
+  background-color: #cccccc;
+  background-image: url('/assets/house-7497001_640.webp');
+  margin-top: 4vh;
+}
+
+.home-content,
+.task-content {
+  /* border: 1px solid; */
+  min-height: 550px;
+  width: 40%;
+  padding: 5% 0%;
+  background-color: #ffffff;
+  margin: 3%;
+  border-radius: 15px;
+}
+
+.task-list {
+  position: relative;
+  margin: 15% 0 15% 0;
+}
+
+.task-list span {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  background: #fff;
+  text-align: center;
+}
+
+.add-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(153, 153, 153);
+  margin-bottom: 20%;
+}
+
+.add-list button {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  color: rgb(153, 153, 153);
+  border: 1px solid rgb(153, 153, 153);
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.add-list span {
+  margin-top: 2%;
+  font-size: small;
+}
+
+.task-lists {
+  display: flex;
+  margin: 0 4%;
+  justify-content: space-between;
+  overflow: auto;
+  overflow-y: hidden;
+  height: 250px;
+}
+
+.task-lists::-webkit-scrollbar {
+  /* display: none; */
+  width: 2px;
+  height: 2px;
+}
+
+.list {
+  /* border: 1px solid; */
+  margin: 3%;
+  min-width: 50%;
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 5px;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+  /* width: 2px; */
+  /* height: 2px; */
+}
+
+.list a {
+  color: #fff;
+}
+
+.list .task-name {
+  border-bottom: 1px solid;
+  padding: 5% 30%;
+  font-size: 14px;
+}
+
+.todo-container {
+  margin: 10px 0 15px 0;
+  text-align: left;
+  padding: 2px;
+  text-wrap: nowrap;
+}
+
+.todo-list {
+  padding: 5px 12px;
+  font-size: 12px;
+}
+
+.list:nth-child(1n) {
+  background-color: #3b2995;
+}
+.list:nth-child(2n) {
+  background-color: #e03535;
+}
+.list:nth-child(3n) {
+  background-color: #e9e9e9;
+}
+.list:nth-child(4n) {
+  background-color: #93c8f2;
+}

@@ -1,0 +1,32 @@
+.folder {
+    cursor: pointer;
+    /* border: 1px solid; */
+    background-color: blueviolet;
+    margin: 2px;
+    padding: 2px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.folder button {
+    padding: 2px 10px;
+    background-color: white;
+    border: none;
+    margin: 4px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file {
+    /* border: 1px solid; */
+    background-color: aqua;
+    margin: 2px;
+    padding: 2px;
+    width: 50%;
+}
+
+.margin-left {
+    margin-left: 20px;
+}

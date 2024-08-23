@@ -1,0 +1,81 @@
+.square {
+    min-height: 50px;
+    min-width: 50px;
+    /* border: 1px solid; */
+    margin: 1px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snake-and-ladder-board {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+
+.dice-container {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.non-clickable {
+    cursor: not-allowed
+}
+
+.snake-head {
+    background-color: red;
+    color: white;
+}
+
+.snake-bottom {
+    background-color: orange;
+    color: white;
+}
+
+.ladder-head {
+    background-color: yellow;
+    /* color: white; */
+    color:darkgreen
+}
+
+.ladder-bottom {
+    background-color: green;
+    color: white;
+}
+
+.current {
+    display: flex;
+}
+
+.current-position {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid;
+    margin-right: 3px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
